@@ -1,0 +1,70 @@
+<div class="body-bg">
+	<div class="content">
+		<div class="row company-profile">
+			<div class="col-md-2 company-logo">
+				<a href="#">
+					<img src="assets/images/Logo.png"/>
+				</a>
+			</div>
+			<div class="col-md-10">
+				<h3 class="company-name">
+					<strong>App Secure</strong>
+				</h3>
+				<p class="company-detail">
+					App Secure is largest brand company in security.
+				</p>
+			</div>
+		</div>
+		<div class="bug-section">
+			<p class="breadcums">
+				<span>Back to profile</span>
+			</p>
+			<form class="report-bug-form" name="reportBug" id="reportBug">
+				<div class="info row">
+					<div class="info-title col-md-3">
+						<p class="title"><strong>1. Info</strong></p>
+						<p class="title-desc">
+							Select the type of potential issue you have discovered
+						</p>
+					</div>
+					<div class="info-inputs col-md-9">
+						<div class="form-group">
+							<label for="caption">caption</label>
+							<input type="text" class="form-control form-control-lg" id="caption-report" placeholder="write caption for report">
+						</div>
+						<div class="form-group">
+							<label for="bugType">Bug Type</label>
+							<select class="form-control form-control-lg">
+								<option>Select bug Type</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="bug-detail row">
+					<div class="info-title col-md-3">
+						<p class="title"><strong>2. Bug Detail</strong></p>
+						<p class="title-desc">
+							The Proof of concept is the most important part of your report submission.
+						</p>
+					</div>
+					<div class="info-inputs col-md-9">
+						<div class="form-group">
+							<label for="bugUrl">Bug URL/Location</label>
+							<input type="text" class="form-control form-control-lg" id="bug-url" placeholder="http://www.com">
+						</div>
+						<div class="form-group">
+							<label for="bugType">Bug Information</label>
+							<textarea placeholder="Issue Information" class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="file">File</label>
+							<input type="file" id="file"/>
+							<small>you can attach multiple files(shift+click, ctrl+click, etc.) upload will fail if request time takes longer than ~30 second. Please keep combined upload size < 2 MB </small>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="pull-right btn-default btn btn-success">Report Bug</button>
+			</form>
+		</div>
+	</div>
+</div>

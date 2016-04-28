@@ -1,0 +1,186 @@
+<div class="reports-section">
+	<div class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<h3 class="col-md-3">Settings</h3>
+		</div>
+	</div>
+	<div class="sub-menu">
+		<ul class="list-inline">
+			<li ng-repeat="tab in tabs" 
+                ng-class="{active:isActiveTab(tab.url)}" 
+                ng-click="onClickTab(tab.url)">{{tab.title}}
+            </li>
+		</ul>
+	</div>
+	<div class="settings-detail">
+		<form ng-show="isActiveTab('profileForm')" class="profile-form" name="profileForm" id="profileForm">
+			<div class="info row">
+				<div class="profile-inputs col-md-12">
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label for="profilePhoto">Profile Photo</label>
+						</div>
+						<div class="col-md-10">
+							<div class="col-md-2 profile-pic">
+								<img class="img-responsive" src="assets/images/Logo.png"/>
+							</div>
+							<div class="col-md-10">
+								<input class="custom-file-input" type="file" id="file"/>
+								<p>
+									Images must be <2MB in size, dimensions <5000px on a side
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label for="userName">User name</label>
+						</div>
+						<div class="col-md-10">
+							<input type="text" class="form-control form-control-lg" id="user-name" placeholder="Type your user name">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label for="aboutYou">About You</label>
+						</div>
+						<div class="col-md-10">
+							<textarea placeholder="about you" class="form-control" rows="5" id="about-you"></textarea>
+							<div class="col-md-12 update-btn">
+								<md-button type="submit" class="pull-left md-raised md-primary md-button md-ink-ripple">Update</md-button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<form ng-show="isActiveTab('accountForm')" class="account-form" name="accountForm" id="accountForm">
+			<div class="info row">
+				<div class="profile-inputs col-md-12">
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label for="emailAddress">Email Address</label>
+						</div>
+						<div class="col-md-10">
+							<input type="email" id="email"/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-12 password-section">
+							<label>Password</label>
+						</div>
+						<div class="col-md-2">
+							<label class="sec-label" for="password">Current Password</label>
+						</div>
+						<div class="col-md-10">
+							<input type="password" id="password"/>
+							<div class="col-md-12 forget-password">
+								<a href="#reset-password">Forget password</a>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label class="sec-label" for="newPassword">New Password</label>
+						</div>
+						<div class="col-md-10">
+							<input type="password" id="new-password"/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2">
+							<label class="sec-label" for="verifyPassword">Verify Password</label>
+						</div>
+						<div class="col-md-10">
+							<input type="password" id="verify-password"/>
+							<div class="col-md-12 update-btn">
+								<md-button type="submit" class="pull-left md-raised md-primary md-button md-ink-ripple">Update</md-button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div ng-show="isActiveTab('payments')" class="payments-form" name="payments" id="payments">
+			<div class="info row">
+				<div class="col-md-12 bnk-detail" ng-show="!showBankForm">
+					<p>You have not added your bank details</p>
+					<md-button ng-click="showBankDetail()" type="button" class="md-raised md-primary md-button md-ink-ripple bank-btn">
+						Add Bank
+					</md-button>
+				</div>
+				<div class="bank-form col-md-12" id ="bank-modal-form" ng-show="showBankForm">
+					 <form class="form-horizontal row" id="bankForm" name="bankForm" ng-submit="submitForm()" >
+	                    <div class="form-inner col-md-12"  ng-repeat="field in formFields">
+		                    <div class="form-group row" ng-if="field.fieldType !=='select'">
+		                        <label class="col-sm-2 control-label">{{field.title}}: </label>
+		                        <div class="col-sm-10">
+		                            <input type="{{field.fieldType}}" ng-model="newObject[field.name]" name="{{field.name}}" ng-if="field.validity=== true" value="" required/> 
+		                        </div>
+		                    </div>
+		                    <div class="form-group row" ng-if="field.fieldType ==='select'">
+		                        <label class="col-sm-2 control-label">{{field.title}}: </label>
+		                        <div class="col-sm-10">
+		                            <select name="{{field.name}}" class="selected-option form-control" ng-model="newObject[field.name]" ng-options='option.name for option in field.options' ng-if="field.validity=== true" required>
+		                            </select>
+		                        </div>
+		                    </div>
+	                    </div>
+	                </form>
+	                <md-button type="button" class="md-raised md-button md-ink-ripple" data-dismiss="modal">Cancel</md-button>
+                    <md-button type="submit" class="md-raised md-primary md-button md-ink-ripple save-setting" form="authForm">Save</md-button>
+		         </div>
+			</div>
+		</div>
+		<div ng-show="isActiveTab('team')" class="team-form table-responsive col-md-9" id="team">
+			<table class="table">
+					<thead>
+						<tr>
+							<th>Team Member</th>
+							<th>Email</th>
+							<th>Status</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Sahil Pandya</td>
+							<td>Sahilpandya091@gmail.com</td>
+							<td>Active</td>
+							<td>Delete</td>
+						</tr>
+					</tbody>
+			</table>
+			<md-button type="button" class="md-raised md-primary md-button md-ink-ripple">
+							Add Member
+						</md-button>
+			<form class='form-inline' name="addMemberForm" id="add-member-form" ng-submit='addMember()' novalidate>
+                <div class='form-group'>
+                    <div>
+                        <input class="form-control" name="name" type="text" ng-model='name' placeholder="name" required>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <div>
+                        <input class="form-control" name="email" type="email" ng-model='email' placeholder="email address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                	<md-button type="submit" form="add-member-form" class="md-raised md-primary md-button md-ink-ripple">
+					Save
+				</md-button>
+                </div>
+             </form>
+		</div>	
+	</div>
+</div>
+

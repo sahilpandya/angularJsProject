@@ -1,0 +1,82 @@
+<!doctype html>
+<html data-ng-app="AppSecure" data-ng-csp="">
+<head lang="en">
+<meta charSet="utf-8"/>
+<meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>App Secure</title>
+<link href="assets/css/common.css" rel="stylesheet"/>
+<link href="assets/css/main.css" rel="stylesheet"/>
+<link href="assets/css/homepage.css" rel="stylesheet"/>
+<link href="assets/css/settings.css" rel="stylesheet"/>
+<link href="assets/css/report.css" rel="stylesheet"/>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+ <link rel="stylesheet" href="assets/css/lib/angular-csp.css" />
+ <link rel="stylesheet" href="assets/css/lib/angular-notify.min.css" />
+ <link rel="stylesheet" href="assets/css/lib/angular-material.min.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<nav class="navbar home-navbar" ng-controller="MainController">
+      <div class="menu-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#/"><img src="assets/images/Logo.png" alt="logo" /></a>
+        </div>
+        <div id="navbar" ng-show="isLogin == true" class="collapse navbar-collapse clearfix">
+          <ul class="nav navbar-nav pull-left" ng-init="active = true">
+            <li ng-class="{active:'reports' == currentTab}" 
+                    ng-click="onClickTab('reports')"><a href="#reports">Reports</a></li>
+            <li ng-class="{active:'programs' == currentTab}" 
+                    ng-click="onClickTab('programs')"><a href="#programs">Programs</a></li>
+          </ul>
+          <ul class="user-menu pull-right list-inline">
+          	<li><img src=""/><span class="glyphicon glyphicon-bell"></span></li>
+            <li class='user-pic'>
+              <p class="user-icon">KS</p>
+            	<ul class="submenu-setting">
+            		<li><a href="#/settings">Settings</a></li>
+            		<li><a href="#signout">Sign Out</a></li>
+            	</ul>
+
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        <div id="navbar" ng-hide="isLogin == true" class="home-menu collapse navbar-collapse clearfix">
+          <ul class="nav navbar-nav pull-left" ng-init="active = true">
+            <li ng-class="{active:'what-we-do' == currentTab}" 
+                    ng-click="onClickTab('what-we-do', '#whatwedo', $event)"><a href="#whatwedo">What we do??</a></li>
+            <li ng-class="{active:'why-us' == currentTab}" 
+                    ng-click="onClickTab('why-us', '#whyus', $event)"><a href="#whyus">Why Us</a></li>
+            <li ng-class="{active:'about-us' == currentTab}" 
+                    ng-click="onClickTab('about-us', '#aboutus', $event)"><a href="#aboutus">About Us</a></li>
+          </ul>
+          <ul class="auth-option pull-right list-inline">
+            <li><button type="button" class="login-btn" data-toggle="modal" data-target="#logIn">Log in</button></li>
+            <li><button type="button" class="signup-btn" data-toggle="modal" data-target="#signUp">Sign up</button></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="body-container" ng-view></div>
+    <script src="assets/lib/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap.min.js"></script>
+    <script src="assets/lib/angular/angular.min.js"></script>
+    <script src="assets/lib/angular/angular-route.min.js"></script>
+    <script src="assets/lib/angular/angular-animate.min.js"></script>
+    <script src="assets/lib/angular-material/angular-aria.js"></script>
+    <script src="assets/lib/angular-material/angular-material.min.js"></script>
+    <script src="assets/lib/angular-notify/angular-notify.min.js"></script>
+    <script src="assets/lib/angular-cookies.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/router.js"></script>
+    <script src="assets/js/controllers.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/authentication.service.js"></script>
+    <script src="assets/js/user.service.local-storage.js"></script>
+</body>
+</html>

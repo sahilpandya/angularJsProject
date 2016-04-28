@@ -1,0 +1,120 @@
+button:focus{
+	outline: none;
+}
+#signUp .modal-header .nav-tabs li a:focus{
+	outline: none;
+}
+#signUp .modal-header .nav-tabs li:focus{
+	outline: none;
+}
+#logIn .modal-dialog{
+	width: 500px;
+  height: 558px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+#logIn .modal-content{
+	height:100%;
+}
+#logIn .modal-body{
+	height: 90%;
+	padding:15px 36px;
+}
+#logIn .modal-body .form-group{
+	margin-bottom: 0;
+}
+#logIn .modal-body .login-btn{
+	margin-top:27px;
+	border-radius: 2px;
+	background-color: #3080e8;
+	border: solid 1px #3080e8;
+	width: 100%;
+	height:42px;
+	font-size: 16px;
+}
+#logIn .modal-body .form-group #email{
+	border-bottom:none;
+}
+#logIn .modal-body .form-group input{
+	height: 50px;
+	background-color: #ffffff;
+	border: solid 1px #d6d6d6;
+	border-radius:1px; 
+}
+#logIn .modal-body h4{
+	font-size: 18px;
+	color: #333333;
+}
+#logIn .modal-footer{
+	text-align: center;
+	font-size: 12px;
+	margin:0 40px;
+}
+#signUp .modal-dialog{
+	width: 500px;
+  height: 558px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+#signUp .modal-content{
+	height:100%;
+}
+#signUp .modal-header{
+	height: 90%;
+	padding:15px 36px;
+}
+#signUp .modal-header .form-group{
+	margin-bottom: 0;
+}
+#signUp .modal-header .form-group #password{
+	border-bottom: solid 1px #d6d6d6;
+}
+#signUp .modal-header .form-group input{
+	height: 50px;
+	background-color: #ffffff;
+	border: solid 1px #d6d6d6;
+	border-radius:1px; 
+	border-bottom:none;
+}
+#signUp .modal-header .login-btn{
+	margin-top:27px;
+	border-radius: 2px;
+	background-color: #3080e8;
+	border: solid 1px #3080e8;
+	width: 100%;
+	height:42px;
+	font-size: 16px;
+}
+#signUp .modal-body h4{
+	font-size: 18px;
+	color: #333333;
+}
+#signUp .modal-header{
+	border-bottom: none; 
+}
+#signUp .modal-header .nav-tabs{
+	margin-bottom: 20px;
+}
+#signUp .modal-header .nav-tabs li a {
+	color: #696969;
+}
+#signUp .modal-header .nav-tabs li a:hover{
+	border-color: transparent;
+}
+#signUp .modal-header .nav-tabs .active{
+	border-bottom: 1px solid #3080e8;
+}
+#signUp .modal-header .nav-tabs .active a {
+	border: 1px solid transparent;	
+	color: #3080e8;
+	font-family: OpenSansSemiBold;
+}
+#signUp .modal-header .signup-text{
+	font-size: 12px;
+	margin-top: 10px;
+}
+#signUp .modal-footer{
+	text-align: center;
+	font-size: 12px;
+	margin:0 40px;
+}

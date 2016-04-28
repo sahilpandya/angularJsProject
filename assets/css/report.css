@@ -1,0 +1,207 @@
+.reports-section .navbar{
+    padding:10px 50px 0 50px;
+    margin:0;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #e0dfdf;
+    font-size: 16px;
+    color: #696969;
+}
+.reports-section .navbar ul li .active{
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+.reports-section .navbar ul li a{
+    padding:18px;
+}
+.reports-section .navbar-form #srch-term{
+    padding:19px 100px 19px 35px;
+    border-radius:100px;
+    border-color: #D5D1D3;
+    box-shadow: none;
+}
+.reports-detail.row{
+    padding:30px;
+    margin:0;
+    background-color: #f4f4f5;
+}
+.bug-list > :nth-child(even){
+  background-color: #FFFFFF;
+}
+.bug-list > :nth-child(odd){
+  background-color: #F8F8F8;
+}
+.bug-list li{
+    vertical-align: top; 
+}
+.bug-list li h5{
+    margin:0;
+}
+.bug-list .raise-bug{
+    padding:20px;
+    cursor: pointer;
+    margin:0;
+}
+.bug-list .raise-bug .bug-detail strong{
+    font-size: 15px;
+    font-family: OpenSansSemiBold;
+}
+.bug-list .raise-bug .bug-detail p{
+    font-size: 13px;
+    font-family: OpenSansSemiBold;
+     color: #696969;
+}
+.bug-list .raise-bug .bug-time{
+  color: #a4a4a4;
+  font-size: 13px;
+}
+.reports-list-item{
+    padding:0 !important;
+}
+.reports-list-item .bug-list{
+    box-shadow: 0 -2px 3px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 20px 0 0px;
+    border-radius: 4px;
+}
+.full-detail-reports{
+    background-color: #fff;
+    box-shadow: 0 -2px 3px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px 0 15px;
+    border-radius: 4px;
+}
+.full-detail-reports .bug-description{
+    padding: 10px 0 20px 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #696969;
+     border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+}
+.full-detail-reports .report-head {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.full-detail-reports .report-head .text{
+    color: #333333;
+    font-size: 14px;
+}
+.full-detail-reports .report-head .status {
+    color: #3080e8; 
+    font-family: OpenSansSemiBold;  
+}
+.full-detail-reports .report-head .bug-head{
+    font-size: 16px;
+    color: #333;
+    margin-left: 15px;
+}
+.full-detail-reports .report-head .bug-icon img{
+    width: 32px;
+    height: 32px;
+}
+.full-detail-reports .bug-heading{
+    padding-top:15px;
+}
+.full-detail-reports .bug-heading strong{
+    font-size: 20px;
+    font-family: OpenSansSemiBold;
+    color: #333333;
+}
+.full-detail-reports .bug-heading .bug-date-time{
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    color: #696969;
+}
+.bug-summary{
+    margin-top: 25px;
+} 
+.bug-summary .chat-section .chat-table .username .name {
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    color: #333333;
+}
+.bug-summary .chat-section .chat-table .username .chat-time{
+    font-size: 12px;
+    color: #767b83;
+    margin-left: 50px;
+}
+.bug-summary .chat-section .chat-table .content{
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+.bug-summary .chat-section .chat-table .odd{
+    padding:15px 0;
+    margin:10px 0;
+    background-color: #fff;
+}
+.bug-summary .chat-section .chat-table .even{
+    padding:15px 0;
+    margin:10px 0;
+    background-color: #fffbf2;
+    border-top: 1px solid rgba(150, 150, 150, 0.2);
+}
+.comment-form .form-group{
+    background-color: #f4f4f5;
+    padding:15px 0;
+    margin:20px 0 0 0;
+}
+.comment-form .form-group textarea{
+    height: 48px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px rgba(150, 150, 150, 0.2);
+}
+.comment-form .comment-form-btn{
+     border-top: solid 1px rgba(150, 150, 150, 0.2);   
+     background-color: #f4f4f5;
+     padding:10px;
+}
+.comment-form .comment-form-btn .plus{
+    width: 26px;
+    height: 26px;
+    border: solid 1px #d6d6d6;
+    font-size: 16px;
+    color: #696969;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.comment-form .comment-form-btn .text{
+    font-size: 14px;
+    color: #696969;
+}
+.comment-form .comment-form-btn button{
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    color: #ffffff;
+}
+.comment-form .comment-form-btn .spam-btn {
+    width: 62px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #fc91ad;
+}
+.comment-form .comment-form-btn .duplicate-btn {
+    width: 94px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #37c5ab;
+}
+.comment-form .comment-form-btn .close-btn {
+    width: 76px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #fb641b;
+}
+.reports-section .user-icon{
+    width: 36px;
+    height: 36px;
+    background-color: #ff8042;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+}

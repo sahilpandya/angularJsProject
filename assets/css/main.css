@@ -1,0 +1,315 @@
+body{
+    font-family: OpenSans !important;
+}
+.container{
+    width:1360px !important;
+}
+.report-bug-form .form-control, .profile-form .form-control{
+    padding:25px 10px;
+    border-radius: 5px;
+}
+.body-container{
+    margin-top: 65px;
+}
+.navbar{
+}
+.home-navbar{
+    position: fixed !important;
+    width: 100%;
+    background-color: #fff;
+    left:0;
+    right:0;
+    z-index: 999;
+    top:0;
+}
+.navbar .menu-container #navbar a {
+    color:#696969;
+    font-size: 16px;
+    padding:10px 30px;
+}
+.navbar .menu-container #navbar li.active {
+    border-bottom: 1px solid #666;
+    font-family: OpenSansSemiBold;
+}
+.user-menu{
+    margin:0;
+}
+.home-menu ul li a{
+    font-size: 14px !important;
+}
+.auth-option{
+    margin:0;
+}
+.auth-option li button{
+    margin:0;
+}
+.menu-container{
+    padding:8px 50px 0 50px;
+}
+#navbar .navbar-nav{
+    padding:0 100px;
+}
+.navbar .menu-container #navbar .submenu-setting li a {
+    font-size: 14px !important;
+    padding:10px;
+}
+.body-container .body-bg{
+    position: relative;
+    width: 100%;
+    background-color: #f00;
+    height: 200px;
+}
+.body-bg .content{
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    right: 3%;
+    background-color: #fff;
+    top:60%;
+    padding: 30px 50px;
+}
+.content .company-profile .company-logo{
+    padding: 50px 0px;
+}
+.content .company-profile .company-logo a {
+    padding: 55px 5px;
+    border: 1px solid #ccc;
+}
+.company-detail{
+    color:#666;
+}
+.company-profile button {
+    padding: 10px 30px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.company-profile{
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 40px;
+}
+.detail-section{
+    padding:30px 0;
+}
+.detail-section dl dt {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.detail-section dl dd{
+    font-size: 16px;
+    color: #666;
+    width:65%;
+}
+.margin-zero{
+    margin:0;
+}
+.programs-detail{
+    padding: 30px 70px;
+}
+.program-section{
+    border:1px solid #d8d8d8;
+    padding:20px 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.program-img img{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.program-description{
+    width: 75%;
+    color: #666;
+}
+.no-more-program{
+    color: #666;
+}
+.bug-section{
+    padding: 20px 0 40px 0;
+}
+.bug-section .breadcums span{
+    border-bottom: 1px solid #000;
+}
+.info .profile-inputs {
+    padding-bottom: 20px;
+}
+.profile-inputs .form-group{
+    padding: 10px 0;
+}
+.info .info-inputs{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.info-inputs .form-group{
+    padding: 10px 0;
+}
+#file{
+    padding-bottom: 10px;
+}
+.bug-detail .info-inputs{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.settings-detail{
+    padding: 30px 50px;
+}
+.sub-menu{
+    padding: 10px 50px 0px 50px;
+    border-bottom: 1px solid #e0dfdf;
+}
+.sub-menu ul{
+    margin-bottom:0; 
+}
+.sub-menu ul li{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #696969;
+}
+.sub-menu ul li a{
+    color: #666;
+    font-size: 16px;
+}
+.sub-menu ul li.active{
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    color: #333333;
+    font-family: OpenSansSemiBold;
+}
+.sub-menu ul li:focus{
+    outline: none;
+}
+.info .info-title{
+    padding:0px 0 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-form .profile-inputs{
+    padding-top:20px;
+}
+.profile-form .info{
+    margin:0;
+}
+.settings-detail .update-btn {
+    padding:10px 0;
+}
+.account-form .forget-password{
+    padding:5px 0 0 0;
+}
+.settings-detail .btn{
+    background-color:#3184EF;
+    color:#fff;
+}
+#payments .info .bnk-detail{
+    padding:10px 0;
+}
+#bank-modal-form .modal-dialog{
+    margin-top:50px;
+}
+.home-page-banner{
+    background: #FFF no-repeat center top;
+    background-image:url('../images/background.png'); 
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #fff;
+}
+.what-we-do{
+    position: relative;background-color:#fff; margin-top:-100px; margin-right: 150px; margin-left: 150px;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.1);
+}
+.what-we-do .intro-text{
+    margin-top:60px;
+    font-size: 28px;
+    line-height: 20px;
+}
+.what-we-do .wwd-section{
+    margin-top:50px;
+}
+.what-we-do .wwd-section .title{
+    margin-top:25px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: openSans;
+}
+.what-we-do .wwd-section .short-desc{
+    margin-top:25px;
+    font-family: OpenSansLight;
+    font-size: 14px;
+    line-height: 24px;
+}
+.intro-text{
+    margin-top:40px;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: openSans;
+}
+.about-us{
+    margin-top:25px; 
+    padding-bottom: 100px;
+    font-family: OpenSansLight;
+    font-size: 16px;
+    line-height: 26px;
+}
+.home-page-footer{
+    opacity: 0.9;
+    background-color: #1f264e;
+    min-height: 400px;
+    padding-top:180px;
+}
+.login-btn{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #3080e8;
+    color:#fff;
+    font-family: OpenSansSemibold;
+    border: solid 1px #3080e8;
+}
+.signup-btn{
+    width: 120px;
+    height: 36px;
+    border-radius: 2px;
+    border: solid 1px #3080e8;
+    font-size: 14px;
+    font-family: OpenSansSemibold;
+    color: #3080e8;
+    background: transparent;
+    text-decoration: none;
+}
+.search-from .navbar-form{
+    padding:0;
+    margin:4px 0;
+}
+.search-from .navbar-form .form-control{
+    font-family: openSans;
+    font-size: 14px;
+    color: #c6c1c1;
+}
+.reports-section h3{
+    margin:10px 0;
+}
+.home-page-footer .footer-title h3{
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+}
+.home-page-footer .footer-title{
+    padding-bottom: 30px;
+}
+.home-page-footer .overlay .signup-btn{
+    margin-left:10px;
+    border: 1px solid #fff;
+    color:#fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+}
+.home-page-footer .overlay .login-btn{
+    margin-right:10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+}
+.reports-section .program-navbar{
+     padding:10px 50px 10px 50px !important;
+}

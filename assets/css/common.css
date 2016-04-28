@@ -1,0 +1,82 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Regular-webfont.ttf") format('truetype'),
+       url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format('embedded-opentype'); 
+}
+@font-face {
+  font-family: OpenSansLight;
+ src: url("../fonts/OpenSans-Light-webfont.ttf") format('truetype'),
+       url("../fonts/OpenSans-Light-webfont.eot?#iefix") format('embedded-opentype'); 
+}
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url("../fonts/OpenSans-Semibold-webfont.ttf") format('truetype'),
+       url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format('embedded-opentype'); 
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url("../fonts/OpenSans-Bold-webfont.ttf") format('truetype'),
+       url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format('embedded-opentype');  
+}
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url("../fonts/OpenSans-ExtraBold-webfont.ttf") format('truetype'),
+       url("../fonts/OpenSans-ExtraBold-webfont.eot?#iefix") format('embedded-opentype');  
+}
+
+@font-face {
+    font-family: Roboto Light;
+    src: url("../fonts/Roboto-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: Roboto Light Italic;
+    src: url("../fonts/Roboto-LightItalic.ttf") format('truetype');
+}
+
+/* Normal */
+@font-face {
+    font-family: Roboto Regular;
+    src: url("../fonts/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: Roboto Italic;
+    src: url("../fonts/Roboto-Italic.ttf") format('truetype');
+}
+
+/* Bold */
+@font-face {
+    font-family: Roboto Bold;
+    src: url("../fonts/Roboto-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: Roboto Bold Italic;
+    src: url("../fonts/Roboto-BoldItalic.ttf") format('truetype');
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: transparent !important;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'choose file';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  color:#333;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}

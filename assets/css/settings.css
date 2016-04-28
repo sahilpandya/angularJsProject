@@ -1,0 +1,161 @@
+.user-pic .user-icon{
+    width: 36px;
+    height: 36px;
+    background-color: #ff8042;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+    margin-bottom:0;
+}
+.user-pic:hover .submenu-setting{
+    display: block;
+} 
+.user-pic .submenu-setting{
+    display:none;
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    border: solid 1px #dfdfdf;
+    right: -15px;
+    width: 150px;
+    z-index: 9999;
+    padding: 20px 15px 20px 0px;
+    height: 100px;
+    font-size: 14px;
+    font-family: OpenSans;
+    line-height: 20px;
+    color: #696969;
+    top:42px;
+}
+.user-pic{
+    position: relative;
+    margin-left: 40px;
+    padding: 0 15px 15px 15px;
+}
+.user-pic .submenu-setting li{
+    margin-bottom:10px;
+}
+.user-pic .submenu-setting:after, .user-pic .submenu-setting:before {
+    bottom: 100%;
+    left: 75%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.user-pic .submenu-setting:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 12px;
+    margin-left: -12px;
+}
+.user-pic .submenu-setting:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #ccc;
+    border-width: 13px;
+    margin-left: -13px;
+}
+.team-form .table thead{
+    background-color: #f3f3f3;
+}
+.profile-inputs .form-group label{
+    font-size: 16px;
+    line-height: 20px;
+    color: #292929;
+    font-weight: normal;
+}
+.profile-inputs .form-group .sec-label{
+    font-size: 14px;
+    color: #8b8b8b;
+    font-weight: normal;
+}
+.profile-inputs .password-section{
+    margin-bottom: 15px;
+}
+.profile-inputs input{
+    height: 45px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e2e2e2;
+    padding:10px 15px;
+    font-size: 14px;
+    color: #696969;
+}
+.profile-inputs input:focus{
+    outline: none;
+}
+.profile-inputs .forget-password a {
+    text-decoration: none;
+    color: #3080e8;
+    font-size: 12px;
+}
+.profile-inputs button{
+    width: 141px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: #3080e8;
+}
+#add-member-form .form-group .form-control{
+    width: 221px;
+    height: 36px;
+    border-radius: 2px;
+    border: solid 1px #d6d5d5;
+}
+.profile-inputs #user-name{
+    height: 45px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e2e2e2;
+    padding:10px;
+    color: #696969;
+    font-size: 14px;
+}
+.profile-inputs #about-you{
+    height: 120px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e2e2e2;
+    padding: 10px;
+    color: #696969;
+    font-size: 14px;
+}
+.profile-pic img{
+    border: 1px solid #ccc;
+    padding: 40px 0px;
+    height:120px;
+    width: 120px;
+}
+.profile-inputs .form-group p{
+    font-size: 12px;
+    color: #ababab;
+}
+.profile-inputs #file{
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 0.5px #fff;
+    color: #fff;
+    font-size: 12px;
+    font-family: OpenSansSemiBold
+}
+#bank-modal-form .form-group label{
+    text-align: left;
+}
+#payments input{
+    height: 45px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e2e2e2;
+    padding:10px 15px;
+    font-size: 14px;
+    color: #696969;
+}
+#payments input:focus{
+    outline: none;
+}
+.profile-inputs #file:focus{
+    outline: none;
+}
